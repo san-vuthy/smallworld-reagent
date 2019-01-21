@@ -1,0 +1,64 @@
+
+.backBanner{
+    background-image: url("/images/banner.jpg");
+    height: 50vw;
+    background-position: center;
+    background-size: cover;
+}
+.navbarPadding{
+    padding: 20px 50px;
+}
+.menu .item{
+    font-size: 20px;
+    color: #fff !important;
+}
+.bannerContent{
+    width: 50%;
+    padding-top: 10%;
+}
+.bannerContent h2{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 500;
+}
+.bannerContent .paragraph{
+    font-size: 22px;
+    padding: 30px 0px;
+    color: #edecec;
+}
+.ui.basic.btnLearnMore{
+    border-radius: 30px !important;
+    padding: 15px 50px !important;
+    border:1px solid #fff !important;
+    color: #fff !important;
+    font-size: 18px;
+}
+.backgroundIndex{
+    background-color: #01327e;
+    padding: 80px 0px;
+    color: #fff;
+}
+.indexSection1 p{
+    font-size: 20px;
+
+}
+.indexSection1 h2{
+    font-size: 36px;
+}
+.indexImage{
+    font-size: 22px;
+}
+.colorIndex{
+    color: #fff !important;
+    font-size: 18px;
+    font-weight: 500 !important;
+}
+.backgroundIndexSection2{
+    background-color: #005cb3;
+    padding: 80px 0px;
+    color: #fff;
+}
+.newsAndEvent{
+    padding: 50px;
+    text-align: center;
+}
