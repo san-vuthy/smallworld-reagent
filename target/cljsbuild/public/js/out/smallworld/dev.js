@@ -7,4 +7,4 @@ devtools.core.install_BANG_.call(null);
 cljs.core.enable_console_print_BANG_.call(null);
 smallworld.core.init_BANG_.call(null);
 
-//# sourceMappingURL=dev.js.map?rel=1548058892421
+//# sourceMappingURL=dev.js.map?rel=1548150274130

@@ -1,7 +1,7 @@
 
 .backBanner{
-    background-image: url("/images/banner.jpg");
-    height: 50vw;
+    /* background-image: url("/images/banner.jpg"); */
+    /* height: 50vw; */
     background-position: center;
     background-size: cover;
 }
@@ -61,4 +61,74 @@
 .newsAndEvent{
     padding: 50px;
     text-align: center;
+}
+.newsDetail p{
+    color: #95a5a6;
+}
+.videoSection{
+    width: 100%;
+    height: 30vw;
+    margin-top: 80px;
+}
+.backInformation{
+    background-image: url("/images/sm_banner.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 8% 0px;
+    margin-top: -15px;
+    color: #fff;
+}
+.backInformation h1{
+    font-size: 40px;
+}
+.backInformation p{
+    font-size: 20px;
+    margin-top: 30px;
+}
+.marginInformation{
+    margin-top: 50px;
+}
+.ui.basic.btnInformation{
+    border-radius: 30px !important;
+    padding: 13px 25px !important;
+    border:1px solid #fff !important;
+    color: #fff !important;
+    font-size: 18px;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+.ui.basic.btnInformation:hover{
+    color: #27ae60 !important;
+}
+.footer{
+    padding: 70px 0px;
+}
+.footer a p{
+    font-size: 22px;
+    color: #95a5a6;
+    padding: 5px 0px;
+}
+.footerIcon{
+    font-size: 22px !important;
+    color: #95a5a6 !important;
+    margin-bottom: 15px !important;
+    font-weight: normal !important;
+}
+.footerIcon img{
+    height: 1.5em !important;
+}
+.searchInput{
+    font-size: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+.searchInput>input{
+    border: 1px solid transparent !important
+}
+.searchInput>input:focus{
+    border-color: transparent !important;
+}
+
+.opportunities{
+    margin: 60px 0px;
 }

@@ -2,13 +2,14 @@
     (:require [smallworld.components.navbar :refer [navbar]]))
 
 (defn banner
-  []
-  [:div.backBanner
+  [image height title desc link]
+  [:div.backBanner {:style {:backgroundImage image :height height}};}}
     (navbar)
     [:div.ui.container
         [:div.bannerContent
-            [:h2 "Northern europe’s hub for knowledge and digital business"]
-            [:p.paragraph "World-class human capital, unique digital capabilities and a competitive business environment make Estonia a smart, agile location for businesses with global ambitions."]
-
-            [:button {:class "ui basic button btnLearnMore"} "LEARN MORE"]]]])
+            [:h2 title]
+            [:p.paragraph desc]
+            [:a {:href link}
+              [:button {:class "ui basic button btnLearnMore"} "LEARN MORE"]]]]])
                 
+

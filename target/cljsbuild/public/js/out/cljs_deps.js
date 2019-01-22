@@ -30,8 +30,8 @@ goog.addDependency("../cljs/repl.js", ['cljs.repl'], ['cljs.core', 'cljs.spec.al
 goog.addDependency("../figwheel/client.js", ['figwheel.client'], ['goog.userAgent.product', 'goog.Uri', 'cljs.core', 'goog.object', 'cljs.core.async', 'figwheel.client.file_reloading', 'figwheel.client.utils', 'cljs.repl', 'figwheel.client.heads_up', 'figwheel.client.socket', 'clojure.string', 'cljs.reader']);
 goog.addDependency("../figwheel/connect.js", ['figwheel.connect'], ['cljs.core', 'figwheel.client']);
 goog.addDependency("../smallworld/components/navbar.js", ['smallworld.components.navbar'], ['cljs.core']);
-goog.addDependency("../smallworld/components/banner.js", ['smallworld.components.banner'], ['smallworld.components.navbar', 'cljs.core']);
-goog.addDependency("../clerk/core.js", ['clerk.core'], ['goog.dom', 'goog.Uri', 'cljs.core', 'cljs.core.async', 'goog.events.EventType', 'goog.fx.dom', 'goog.style', 'goog.events']);
+goog.addDependency("../smallworld/functions/banner.js", ['smallworld.functions.banner'], ['smallworld.components.navbar', 'cljs.core']);
+goog.addDependency("../smallworld/functions/information.js", ['smallworld.functions.information'], ['cljs.core']);
 goog.addDependency("../reagent/interop.js", ['reagent.interop'], ['cljs.core']);
 goog.addDependency("../reagent/debug.js", ['reagent.debug'], ['cljs.core']);
 goog.addDependency("../reagent/impl/util.js", ['reagent.impl.util'], ['reagent.interop', 'cljs.core', 'reagent.debug', 'clojure.string']);
@@ -44,6 +44,10 @@ goog.addDependency("../reagent/impl/template.js", ['reagent.impl.template'], ['r
 goog.addDependency("../cljsjs/react-dom/development/react-dom.inc.js", ['react_dom', 'cljsjs.react.dom'], ['react'], {'foreign-lib': true});
 goog.addDependency("../reagent/dom.js", ['reagent.dom'], ['reagent.impl.util', 'reagent.interop', 'reagent.ratom', 'cljs.core', 'reagent.impl.template', 'reagent.impl.batching', 'reagent.debug', 'react_dom']);
 goog.addDependency("../reagent/core.js", ['reagent.core'], ['reagent.impl.util', 'reagent.interop', 'reagent.ratom', 'react', 'cljs.core', 'reagent.impl.template', 'reagent.impl.batching', 'reagent.impl.component', 'reagent.debug', 'reagent.dom']);
+goog.addDependency("../smallworld/states/news.js", ['smallworld.states.news'], ['reagent.core', 'cljs.core']);
+goog.addDependency("../smallworld/states/opportunities.js", ['smallworld.states.opportunities'], ['reagent.core', 'cljs.core']);
+goog.addDependency("../smallworld/components/opportunities.js", ['smallworld.components.opportunities'], ['smallworld.functions.banner', 'smallworld.functions.information', 'cljs.core', 'smallworld.states.news', 'smallworld.states.opportunities']);
+goog.addDependency("../clerk/core.js", ['clerk.core'], ['goog.dom', 'goog.Uri', 'cljs.core', 'cljs.core.async', 'goog.events.EventType', 'goog.fx.dom', 'goog.style', 'goog.events']);
 goog.addDependency("../reagent/session.js", ['reagent.session'], ['reagent.core', 'cljs.core']);
 goog.addDependency("../reitit/impl.js", ['reitit.impl'], ['cljs.core', 'clojure.set', 'clojure.string']);
 goog.addDependency("../meta_merge/core.js", ['meta_merge.core'], ['cljs.core', 'clojure.set']);
@@ -52,9 +56,10 @@ goog.addDependency("../reitit/core.js", ['reitit.core'], ['reitit.impl', 'meta_m
 goog.addDependency("../reitit/coercion.js", ['reitit.coercion'], ['reitit.impl', 'cljs.core', 'clojure.walk']);
 goog.addDependency("../reitit/frontend.js", ['reitit.frontend'], ['goog.Uri', 'cljs.core', 'clojure.set', 'reitit.core', 'reitit.coercion']);
 goog.addDependency("../accountant/core.js", ['accountant.core'], ['goog.history.Event', 'goog.Uri', 'cljs.core', 'goog.history.EventType', 'goog.history.Html5History', 'clojure.string', 'goog.events']);
-goog.addDependency("../smallworld/states/news.js", ['smallworld.states.news'], ['reagent.core', 'cljs.core']);
-goog.addDependency("../smallworld/components/index.js", ['smallworld.components.index'], ['cljs.core', 'smallworld.states.news']);
-goog.addDependency("../smallworld/core.js", ['smallworld.core'], ['smallworld.components.banner', 'clerk.core', 'reagent.session', 'reagent.core', 'cljs.core', 'reitit.frontend', 'accountant.core', 'smallworld.components.index']);
+goog.addDependency("../smallworld/components/bannerIndex.js", ['smallworld.components.bannerIndex'], ['smallworld.functions.banner', 'cljs.core']);
+goog.addDependency("../smallworld/components/footer.js", ['smallworld.components.footer'], ['cljs.core']);
+goog.addDependency("../smallworld/components/index.js", ['smallworld.components.index'], ['smallworld.functions.information', 'cljs.core', 'smallworld.states.news']);
+goog.addDependency("../smallworld/core.js", ['smallworld.core'], ['smallworld.components.opportunities', 'clerk.core', 'reagent.session', 'reagent.core', 'cljs.core', 'reitit.frontend', 'accountant.core', 'smallworld.components.bannerIndex', 'smallworld.components.footer', 'smallworld.components.index']);
 goog.addDependency("../devtools/protocols.js", ['devtools.protocols'], ['cljs.core']);
 goog.addDependency("../devtools/context.js", ['devtools.context'], ['cljs.core']);
 goog.addDependency("../devtools/format.js", ['devtools.format'], ['cljs.core', 'devtools.context']);
