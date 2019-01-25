@@ -41,6 +41,7 @@
    (reitit-ring/router
     [["/" {:get {:handler index-handler}}]
      ["/opportunities" {:get {:handler index-handler}}]
+     ["/opportunities-single" {:get {:handler index-handler}}]
      ["/about" {:get {:handler index-handler}}]]
     {:data {:middleware middleware}})
    (reitit-ring/routes

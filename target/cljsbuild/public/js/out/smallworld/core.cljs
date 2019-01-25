@@ -7,6 +7,7 @@
               [smallworld.components.bannerIndex :refer [bannerIndex]]
               [smallworld.components.index :refer [index]]
               [smallworld.components.opportunities :refer [opportunities]]
+              [smallworld.components.opportunities-single-page :refer [opportunities-single]]
               [smallworld.components.footer :refer [footer]]))
               
 
@@ -17,6 +18,7 @@
   (reitit/router
    [["/" :index]
     ["/opportunities" :opportunities]
+    ["/opportunities-single" :opportunities-single]
     ["/about" :about]]))
 
 (defn path-for [route & [params]]
@@ -43,6 +45,11 @@
       (opportunities)))
 
 
+(defn opportunities-single-page []
+  (fn [] 
+      (opportunities-single)))
+
+
 ;; -------------------------
 ;; Translate routes -> page components
 
@@ -50,6 +57,7 @@
   (case route
     :index #'home-page
     :opportunities #'opportunities-page
+    :opportunities-single #'opportunities-single-page
     :about #'about-page))
 
 

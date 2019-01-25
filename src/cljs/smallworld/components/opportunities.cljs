@@ -34,7 +34,7 @@
   []
   [:div
     (banner "url('/images/md_banner_3.jpg')" 
-            "40vw"
+            "50vw"
             "Business opportunities"
             "We are a Northern European hub for industrial, GBS and supply chain sectors and a world leader in IT. As IT becomes the value driver across all industries, Estonia is uniquely positioned as the location of choice for knowledge and digital business."
             "#")

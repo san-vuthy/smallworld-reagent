@@ -24,4 +24,4 @@ smallworld.components.index.index = (function smallworld$components$index$index(
 return new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),smallworld.components.index.section1.call(null),smallworld.components.index.section2.call(null),smallworld.components.index.newsAndEvents.call(null),smallworld.components.index.Video.call(null),smallworld.functions.information.information.call(null)], null);
 });
 
-//# sourceMappingURL=index.js.map?rel=1548148947540
+//# sourceMappingURL=index.js.map?rel=1548231479225

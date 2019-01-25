@@ -132,3 +132,31 @@
 .opportunities{
     margin: 60px 0px;
 }
+.background-opportunities-single{
+    background-color: #17671b;
+    padding: 40px;
+}
+.opportunities-single-border{
+    border-left: 2px solid #ffffff;
+}
+.opportunities-single-title{
+    color: #ffffff;
+    padding-left: 30px;
+    font-size: 50px;
+}
+.opportunities-single-desc{
+    color: #ffffff;
+    padding-left: 30px;
+    font-size: 20px;
+}
+.background-opportunities-section2{
+    padding: 40px 0px;
+}
+.advantages{
+    padding-bottom: 30px;
+    padding-top: 10px;
+    font-size: 40px;
+}
+.advantagesDesc{
+    font-size: 20px;
+}
